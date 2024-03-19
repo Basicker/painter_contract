@@ -66,10 +66,10 @@ impl PainterContract for Contract {
     #[storage(read)]
     fn get_pixels() -> [[Color; 8]; 8] {
         let mut px: [[Color; 8]; 8] = [[Color {
-    red: 255,
-    green: 255,
-    blu: 255,
-}; 8]; 8];
+            red: 255,
+            green: 255,
+            blu: 255,
+        }; 8]; 8];
 
         let mut i = 0;
         while i < storage.pixels.len() {
